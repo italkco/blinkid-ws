@@ -1,0 +1,45 @@
+<!doctype html><html><head><script>(function() {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect != location.href) {
+                history.replaceState(null, null, redirect);
+            }
+        })();</script><base href="/apidev/"><meta charset="utf-8"><title>MicroBlink API</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/x-icon" href="favicon.ico"><link href="styles.74c5cf080d3d5711d0fc.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><div class="loading-splash-screen"><h1><img src="assets/microblink-logo.svg"><br><br>loading in progress...</h1></div><style>div.loading-splash-screen {
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            color: #48b2e8;
+            background: #FFF;
+            z-index: -1;
+        }
+        div.loading-splash-screen h1 {
+            font-size: 0px;
+            position: absolute;
+            font-size: 2em;
+            top: 50%;
+            width: 100%;
+            color: #48b2e8;
+            font-size: 2em;
+            text-align: center;
+            transform: translate(0, -50%);
+        }
+        div.loading-splash-screen h1 img {
+            height: 100px;
+        }
+        app-root:empty+div.loading-splash-screen {
+            opacity: 1;
+            z-index: 100;
+        }
+        app-root:empty+div.loading-splash-screen h1 {
+            font-size: 2em;
+        }</style><script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.22/webcam.min.js" integrity="sha256-45DnF41utsUID0OyerBVZOfF70GWPCD0Y6LdGvACkTs=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js" integrity="sha256-/IsIG6PVpScPtmO0hWzkdCd6UkIfmKO4qjhRAMNCo9g=" crossorigin="anonymous"></script><script type="text/javascript">(function (p,o,s,t,m,a,n) {
+        !p[s] && (p[s] = function () { (p[t] || (p[t] = [])).push(arguments); });
+        !o.getElementById(s+t) && o.getElementsByTagName("head")[0].appendChild((
+          (n = o.createElement("script")),
+          (n.id = s+t), (n.async = 1), (n.src = m), n
+        ));
+      }(window, document, "_pm", "PostmanRunObject", "https://run.pstmn.io/button.js"));</script><!-- c1bc2ea3-387a-44d9-80f4-9b7e79c1ef04 --><script type="text/javascript" src="inline.235a359268af180e4c2d.bundle.js"></script><script type="text/javascript" src="polyfills.043084ca495430fc14f3.bundle.js"></script><script type="text/javascript" src="vendor.277e886215ec68400bad.bundle.js"></script><script type="text/javascript" src="main.f8fdea77516ff59e84bb.bundle.js"></script></body></html>
